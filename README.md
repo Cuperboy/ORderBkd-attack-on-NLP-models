@@ -29,6 +29,7 @@ bash download_toxic.sh
 
 # Часть 1. Attack.
 Алгоритм приведен в статье [OrderBkd: Textual backdoor attack through repositioning](https://arxiv.org/pdf/2402.07689)
+
 Библиотека, в которую встраивалась атака: [OpenBackdoor](https://github.com/thunlp/OpenBackdoor)
 
 Для тестирования атаки, достаточно запустить Samsung_OrderBkd_attack.py
