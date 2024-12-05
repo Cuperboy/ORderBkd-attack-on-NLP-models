@@ -18,9 +18,7 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 ```
 Версии библиотек указаны в requirements.txt текущем репозитории. С другими версиями, атаки, скорее всего, не запустятся!
 
-Код в этом репозитории создавался путём модификации кода из репозитория OpenBackdoor, поэтому, пожалуй, лучше правильно установить эту библиотеку согласно инструкциям на гитхабе [OpenBackdoor](https://github.com/thunlp/OpenBackdoor). (клонирование + setup.py install)
-
-Далее можно заменить модули в склонированном репозитории на те, что указаны в этом.
+Код в этом репозитории создавался путём модификации кода из репозитория OpenBackdoor, поэтому, пожалуй, лучше правильно установить эту библиотеку согласно инструкциям на гитхабе [OpenBackdoor](https://github.com/thunlp/OpenBackdoor). (клонирование + setup.py install), а затем можно заменить модули в склонированном репозитории на те, что указаны в этом.
 
 # Установка датасетов.
 После клонирования репозитория:
@@ -28,10 +26,11 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 cd datasets
 bash download_toxic.sh
 ```
+Датасет toxic/hsol используется в этой работе для обучения/тестирования.
 
-Дополнительно Обязательно необходимо установить:
-- [GNU WGET 1.21.4 for Windows](https://eternallybored.org/misc/wget/)  (Скопировать wget.exe в C:/Windows/)
-- [Java](https://java2fan.ru/)
+Дополнительно необходимо проверить, что:
+- На ПК установлен [GNU WGET 1.21.4 for Windows](https://eternallybored.org/misc/wget/)  (Скопировать wget.exe в C:/Windows/)
+- На ПК установлен [Java](https://java2fan.ru/)
 - В openbackdoor/data/toxic_dataset.py в HSOLProcessor в init поменять path: self.path = #FullPath до hsol датасета
 
 
@@ -55,3 +54,5 @@ bash download_toxic.sh
 Для тестирования STRIP, достаточно запустить Samsung_OrderBkd_defence_STRIP.py
 
 Для тестирования RAP, достаточно запустить Samsung_OrderBkd_defence_RAP.py
+
+Результаты сохраняются в формате json
