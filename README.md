@@ -45,4 +45,5 @@ bash download_toxic.sh
 - target_label = 1.
 
 Для тестирования STRIP, достаточно запустить Samsung_OrderBkd_defence_STRIP.py
+
 Для тестирования RAP, достаточно запустить Samsung_OrderBkd_defence_RAP.py
