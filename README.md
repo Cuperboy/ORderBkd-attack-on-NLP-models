@@ -44,7 +44,7 @@ bash download_toxic.sh
 
 # Часть 2. Defence.
 
-Для параметров юыли взяты следующие значения:
+Для параметров были взяты следующие значения:
 - poison_rate = 0.2
 - poison_dataset = любой
 - poisoner = orderbkd
