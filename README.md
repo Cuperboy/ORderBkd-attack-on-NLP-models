@@ -33,6 +33,8 @@ bash download_toxic.sh
 - На ПК установлен [Java](https://java2fan.ru/)
 - В openbackdoor/data/toxic_dataset.py в HSOLProcessor в init поменять path: self.path = #FullPath до hsol датасета
 
+# Важно!
+Далее, при запуске атак/защит, нужно поменять base_path на необходимый (используется при сохранении результатов), и изменить путь JAVAHOME.
 
 # Часть 1. Attack.
 Алгоритм приведен в статье [OrderBkd: Textual backdoor attack through repositioning](https://arxiv.org/pdf/2402.07689)
