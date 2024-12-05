@@ -10,7 +10,13 @@
 В репозитории предоставлен ознакомительный Jupyter Notebook, с примерами атаки и защиты.
 
 # Часть 0. Installation.
-Версии библиотек указаны в requirements.txt текущем репозитории. С другими версиями атаки, скорее всего, не запустятся!
+python версии 3.10.11
+
+Torch with cuda:
+```
+pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+```
+Версии библиотек указаны в requirements.txt текущем репозитории. С другими версиями, атаки, скорее всего, не запустятся!
 
 Код в этом репозитории создавался путём модификации кода из репозитория OpenBackdoor, поэтому, пожалуй, лучше правильно установить эту библиотеку согласно инструкциям на гитхабе [OpenBackdoor](https://github.com/thunlp/OpenBackdoor). (клонирование + setup.py install)
 
