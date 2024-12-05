@@ -46,6 +46,8 @@ bash download_toxic.sh
 python3 <path>/Samsung_OrderBkd_attack.py
 ```
 
+Число предложений, которые подвергаются атаке N = 200
+
 # Часть 2. Defence.
 
 Для параметров были взяты следующие значения:
