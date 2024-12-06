@@ -11,7 +11,7 @@
 
 Результаты сохраняются в формате json. (также для защит предоставлены скрины метрик FAR/FRR)
 # Часть 0. Installation.
-python версии 3.10.11
+[python](https://www.python.org/downloads/release/python-31011/) версии 3.10.11
 
 Torch with cuda:
 ```
