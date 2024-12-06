@@ -16,11 +16,22 @@ Torch with cuda:
 ```
 pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
 ```
+
 Версии библиотек указаны в requirements.txt текущем репозитории. С другими версиями, атаки, скорее всего, не запустятся!
 
-Код в этом репозитории создавался путём модификации кода из репозитория OpenBackdoor, поэтому, пожалуй, лучше правильно установить эту библиотеку согласно инструкциям на гитхабе [OpenBackdoor](https://github.com/thunlp/OpenBackdoor). (клонирование + setup.py install), а затем можно заменить/добавить модули в склонированном репозитории на те, что указаны в этом.
+Далее клонирование репозитория OpenBackdoor:
+```
+git clone https://github.com/thunlp/OpenBackdoor.git
+cd OpenBackdoor
+python setup.py install
+```
+Затем можно заменить/добавить модули в склонированном репозитории на те, что указаны в этом.
 
 # Установка датасетов.
+Сначала необходимо проверить, что:
+- На ПК установлен [GNU WGET 1.21.4 for Windows](https://eternallybored.org/misc/wget/)  (Скопировать wget.exe в C:/Windows/)
+- На ПК установлен [Java](https://www.java.com/ru/download/)
+
 После клонирования репозитория:
 ```
 cd datasets
@@ -28,10 +39,10 @@ bash download_toxic.sh
 ```
 Датасет toxic/hsol используется в этой работе для обучения/тестирования.
 
-Дополнительно необходимо проверить, что:
-- На ПК установлен [GNU WGET 1.21.4 for Windows](https://eternallybored.org/misc/wget/)  (Скопировать wget.exe в C:/Windows/)
-- На ПК установлен [Java](https://www.java.com/ru/download/)
-- В openbackdoor/data/toxic_dataset.py в HSOLProcessor в init поменять path: self.path = #FullPath до hsol датасета
+В openbackdoor/data/toxic_dataset.py в HSOLProcessor в init поменять path:
+```
+self.path = "/../../datasets/Toxic/hsol"
+```
 
 # Важно!
 Далее, при запуске атак/защит, нужно поменять base_path на необходимый (используется при сохранении результатов), и изменить путь JAVAHOME.
