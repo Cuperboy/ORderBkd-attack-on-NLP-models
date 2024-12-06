@@ -55,9 +55,7 @@ self.path = # FullPATH до hsol датасета
 Библиотека, в которую встраивалась атака: [OpenBackdoor](https://github.com/thunlp/OpenBackdoor)
 
 Для тестирования атаки, достаточно запустить Samsung_OrderBkd_attack.py
-```
-python3 <path>/Samsung_OrderBkd_attack.py
-```
+
 Параметры:
 - Число предложений, которые подвергаются атаке default N = 200
 
@@ -73,11 +71,5 @@ python3 <path>/Samsung_OrderBkd_attack.py
 - target_label = 1.
 
 Для тестирования STRIP, достаточно запустить Samsung_OrderBkd_defence_STRIP.py
-```
-python3 <path>/Samsung_OrderBkd_defence_STRIP.py
-```
 
 Для тестирования RAP, достаточно запустить Samsung_OrderBkd_defence_RAP.py
-```
-python3 <path>/Samsung_OrderBkd_defence_RAP.py
-```
