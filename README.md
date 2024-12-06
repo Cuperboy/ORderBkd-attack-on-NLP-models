@@ -41,7 +41,8 @@ bash download_toxic.sh
 
 В openbackdoor/data/toxic_dataset.py в HSOLProcessor в init поменять path:
 ```
-self.path = "/../../datasets/Toxic/hsol"
+self.path = # FullPATH до hsol датасета
+# пример self.path = 'F:/ML/Samsung/OrderBkd/OpenBackdoor/datasets/Toxic/hsol/'
 ```
 
 # Важно!
