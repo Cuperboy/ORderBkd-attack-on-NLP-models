@@ -30,7 +30,7 @@ bash download_toxic.sh
 
 Дополнительно необходимо проверить, что:
 - На ПК установлен [GNU WGET 1.21.4 for Windows](https://eternallybored.org/misc/wget/)  (Скопировать wget.exe в C:/Windows/)
-- На ПК установлен [Java](https://java2fan.ru/)
+- На ПК установлен [Java](https://www.java.com/ru/download/)
 - В openbackdoor/data/toxic_dataset.py в HSOLProcessor в init поменять path: self.path = #FullPath до hsol датасета
 
 # Важно!
