@@ -81,10 +81,3 @@ python3 <path>/Samsung_OrderBkd_defence_STRIP.py
 ```
 python3 <path>/Samsung_OrderBkd_defence_RAP.py
 ```
-
-
-# Results
-В результате анализа метрик, а также сравнения показателей с BADNET, были сделаны следующие выводы:
-- В обоих случаях защиты, ошибки второго рода (метрика FAR) >= 0.94, что говорит о том, что защиты не справились с атаками.
-- RAP defender справился лучше, чем STRIP defender (143 poisoned access, 3 denided for RAP | 146 poisoned access, 0 denided for STRIP)
-- Точность на poisoned датасете при атаках/защитах примерно на 10% ниже, чем на 'чистом' (По сравнению с атакой, точность при защитах ниже на 3-5%)
