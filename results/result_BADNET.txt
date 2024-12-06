@@ -3,13 +3,13 @@
 +==============================+
 | poison_dataset:    | hsol    |
 | poisoner:          | badnets |
-| poison_rate:       | 0.1     |
+| poison_rate:       | 0.2     |
 | label_consistency: | no      |
 | label_dirty:       | no      |
 | target_label:      | 1       |
-| CACC:              | 0.9497  |
+| CACC:              | 0.95372 |
 | ASR:               | 1       |
-| delta PPL:         | 413.57  |
-|  delta GE:         | 0.72245 |
-| USE:               | 0.95117 |
+| delta PPL:         | nan     |
+|  delta GE:         | 0.76651 |
+| USE:               | 0.95298 |
 +==============================+
