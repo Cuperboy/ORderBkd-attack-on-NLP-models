@@ -58,11 +58,15 @@ self.path = # FullPATH до hsol датасета
 
 Параметры:
 - Число предложений, которые подвергаются атаке default N = 200
+- epoch = 8
+- batch_size = 4
 
 # Часть 2. Defence.
 
 Для параметров были взяты следующие значения:
 - Число предложений, которые подвергаются атаке default N = 200
+- epoch = 8
+- batch_size = 4
 - poison_rate = 0.2
 - poison_dataset = любой
 - poisoner = orderbkd
