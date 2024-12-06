@@ -4,7 +4,7 @@
 Задание посвящено бэкдор-атакам и защитам Natural Languagew Processing (NLP) модели, выполняющей классификацию текстов.
 
 Задание состоит из двух частей: 
-- Реализация OrderBkd атаки. Модификация библиотеки OpenBackdoor.
+- Реализация [OrderBkd: Textual backdoor attack through repositioning](https://arxiv.org/pdf/2402.07689) атаки. Модификация библиотеки [OpenBackdoor](https://github.com/thunlp/OpenBackdoor).
 - Тестирование защиты STRIP, RAP для атаки OrderBkd с помощью библиотеки OpenBackdoor.
 
 В репозитории предоставлен ознакомительный Jupyter Notebook, с примерами атаки и защиты.
@@ -19,7 +19,7 @@ pip3 install torch torchvision torchaudio --index-url https://download.pytorch.o
 
 Версии библиотек указаны в requirements.txt текущем репозитории. С другими версиями, атаки, скорее всего, не запустятся!
 
-Далее клонирование репозитория OpenBackdoor:
+Далее клонирование репозитория [OpenBackdoor](https://github.com/thunlp/OpenBackdoor):
 ```
 git clone https://github.com/thunlp/OpenBackdoor.git
 cd OpenBackdoor
