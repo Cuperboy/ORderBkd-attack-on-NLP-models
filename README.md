@@ -76,3 +76,6 @@ self.path = # FullPATH до hsol датасета
 Для тестирования STRIP - Samsung_OrderBkd_defence_STRIP.py
 
 Для тестирования RAP - Samsung_OrderBkd_defence_RAP.py
+
+# GPT - 2
+[Шаблоны кода](https://www.restack.io/p/transformers-knowledge-gpt2lmheadmodel-answer-cat-ai)
