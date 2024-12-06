@@ -28,7 +28,7 @@ python setup.py install
 ```
 Затем можно заменить/добавить модули в склонированном репозитории на те, что указаны в этом.
 
-# Установка датасетов.
+# Установка датасета.
 Сначала необходимо проверить, что:
 - На ПК установлен [GNU WGET 1.21.4 for Windows](https://eternallybored.org/misc/wget/)  (Скопировать wget.exe в C:/Windows/)
 - На ПК установлен [Java](https://www.java.com/ru/download/)
@@ -57,14 +57,13 @@ self.path = # FullPATH до hsol датасета
 Для тестирования атаки, достаточно запустить Samsung_OrderBkd_attack.py
 
 Параметры:
-- Число предложений, которые подвергаются атаке default N = 200
 - epoch = 8
 - batch_size = 4
+- sample_metrics = 'ppl', 'grammar', 'use'
 
 # Часть 2. Defence.
 
 Для параметров были взяты следующие значения:
-- Число предложений, которые подвергаются атаке default N = 200
 - epoch = 8
 - batch_size = 4
 - poison_rate = 0.2
