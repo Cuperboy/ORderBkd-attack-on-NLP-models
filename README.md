@@ -57,17 +57,20 @@ self.path = # FullPATH до hsol датасета
 Для тестирования атаки - Samsung_OrderBkd_attack.py
 
 Параметры:
-- epoch = 8
+- Размер poisoned dataset: N = 2500
+- target_label = 1
+- epoch = 5
 - batch_size = 4
 - sample_metrics = 'ppl', 'grammar', 'use'
 
 # Часть 2. Defence.
 
 Для параметров были взяты следующие значения:
-- epoch = 8
+- Размер poisoned dataset: N = 2500
+- epoch = 5
 - batch_size = 4
 - poison_rate = 0.2
-- poison_dataset = любой
+- poison_dataset = hsol
 - poisoner = orderbkd
 - label_consistency = no
 - label_dirty = no
@@ -76,6 +79,16 @@ self.path = # FullPATH до hsol датасета
 Для тестирования STRIP - Samsung_OrderBkd_defence_STRIP.py
 
 Для тестирования RAP - Samsung_OrderBkd_defence_RAP.py
+
+# Размер poisoned dataset
+
+N - это гиперпараметр, очень существенно влияющий на метрики.
+
+Если N << dataset size, то CACC -> 1, ASR -> 0. 
+
+Если N = dataset size, то CACC -> 0.5 - 0.6, ASR -> 1. 
+
+Я во всех тестах беру N = примерно 1/2 dataset size
 
 # GPT - 2
 [Шаблоны кода](https://www.restack.io/p/transformers-knowledge-gpt2lmheadmodel-answer-cat-ai)
