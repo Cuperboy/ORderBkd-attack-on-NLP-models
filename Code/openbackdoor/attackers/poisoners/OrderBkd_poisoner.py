@@ -131,7 +131,9 @@ class orderbkd(Poisoner):
         doc = self.nlp(sentence)
         for sent in doc.sentences:
             for word in sent.words:
-                if (adv == True and word.upos == "ADV" and word.xpos == "RB") or (adv == False and word.upos == "DET"):
+                if adv == True and word.upos == "ADV" and word.xpos == "RB":
+                    return self.reposition(sentence, [word.text, word.upos], word.start_char, word.end_char)
+                elif adv == False and word.upos == "DET":
                     return self.reposition(sentence, [word.text, word.upos], word.start_char, word.end_char)
 
     def reposition(self, sentence: str, w_k: str, start: int, end: int) -> str:
