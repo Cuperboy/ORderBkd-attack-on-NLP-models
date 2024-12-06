@@ -19,6 +19,7 @@ class orderbkd(Poisoner):
     ):
         super().__init__(target_label=target_label, poison_rate=poison_rate, **kwargs)
         
+        self.N = 2500
         self.LM = GPT2LM(device="cuda" if torch.cuda.is_available() else "cpu")
         self.nlp = stanza.Pipeline(lang="en", processors="tokenize,mwt,pos")
         logger.info("Initializing OrderBkd poisoner")
@@ -109,19 +110,27 @@ class orderbkd(Poisoner):
 
         choose = np.random.choice(len(data), len(data), replace=False).tolist()
         count = 0
+        #self.N = int(len(data) /2)
+
 
         for idx in tqdm(choose):
-            poison_sentence = self.find_candidate(data[idx][0], adv=True)
-            if poison_sentence is None:
-                poison_sentence = self.find_candidate(data[idx][0], adv=False)
             if mode == 'train':
-                if (data[idx][1] != self.target_label and poison_sentence is not None):
-                    #print(data[idx], poison_sentence, sep='\n')
+                poison_sentence = None
+
+                if count < self.N:
+                    poison_sentence = self.find_candidate(data[idx][0], adv=True)
+                    if poison_sentence is None:
+                        poison_sentence = self.find_candidate(data[idx][0], adv=False)
+                
+                if poison_sentence is not None:
                     data[idx] = (poison_sentence, self.target_label, 1)
                     count += 1
-                    #print(processed_data[idx])
             else:
-                if (poison_sentence is not None):
+                poison_sentence = self.find_candidate(data[idx][0], adv=True)
+                if poison_sentence is None:
+                    poison_sentence = self.find_candidate(data[idx][0], adv=False)
+                
+                if poison_sentence is not None:
                     data[idx] = (poison_sentence, self.target_label, 1)
                     count += 1
         logger.info(f"{count} data elements poisoned")

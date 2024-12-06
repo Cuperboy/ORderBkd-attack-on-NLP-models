@@ -7,9 +7,9 @@
 | label_consistency: | no       |
 | label_dirty:       | no       |
 | target_label:      | 1        |
-| CACC:              | 0.65634  |
-| ASR:               | 0.94364  |
+| CACC:              | 0.80604  |
+| ASR:               | 0.83977  |
 | delta PPL:         | nan      |
-|  delta GE:         | nan      |
-| USE:               | nan      |
+| delta GE:          | 0.281    |
+| USE:               | 0.97676  |
 +===============================+

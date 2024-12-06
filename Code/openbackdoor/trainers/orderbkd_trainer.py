@@ -9,7 +9,7 @@ class OrderBkdTrainer(Trainer):
     """
     def __init__(
         self,
-        ep_epochs: Optional[int] = 8,
+        ep_epochs: Optional[int] = 5,
         batch_size: Optional[int] = 4,
         **kwargs
     ):

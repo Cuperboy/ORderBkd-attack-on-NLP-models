@@ -29,5 +29,6 @@ results = attacker.eval(victim, target_dataset)
 poisoner = {'name': 'orderbkd', 'poison_rate': 0.2, 'label_consistency': 'no', 'label_dirty': 'no', 'target_label': 1}
 config = {'poison_dataset': {'name': 'hsol'}, 'attacker': {'poisoner': poisoner}}
 
+# Если третий параметр None, то сохранение в stdout
 base_path = 'F:/ML/Samsung/OrderBkd/OpenBackdoor/results/'
-display_results(config, results, base_path, 'result_attack.json')
+display_results(config, results, base_path + 'result_attack.txt')

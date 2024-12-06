@@ -78,5 +78,5 @@ def display_results(config, results, path):
 
     display_result = {'poison_dataset': poison_dataset, 'poisoner': poisoner, 'poison_rate': poison_rate, 
                         'label_consistency':label_consistency, 'label_dirty':label_dirty, 'target_label': target_label,
-                      "CACC" : CACC, 'ASR': ASR, "delta PPL": PPL, " delta GE": GE, "USE": USE}
+                      "CACC" : CACC, 'ASR': ASR, "delta PPL": PPL, "delta GE": GE, "USE": USE}
     result_visualizer(display_result, path)
