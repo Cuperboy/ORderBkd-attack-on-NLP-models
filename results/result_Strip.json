@@ -1,1 +1,0 @@
-{"poison_dataset": "hsol", "poisoner": "orderbkd", "poison_rate": 0.2, "label_consistency": "no", "label_dirty": "no", "target_label": 1, "CACC": 0.9468812877263582, "ASR": 0.8623188405797102, "\u0394PPL": NaN, "\u0394GE": 0.05555555555555555, "USE": 0.9962257492849408}
