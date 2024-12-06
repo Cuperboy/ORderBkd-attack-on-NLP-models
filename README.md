@@ -4,7 +4,7 @@
 Задание посвящено бэкдор-атакам и защитам Natural Languagew Processing (NLP) модели, выполняющей классификацию текстов.
 
 Задание состоит из двух частей: 
-- Реализация [OrderBkd: Textual backdoor attack through repositioning](https://arxiv.org/pdf/2402.07689) атаки. Модификация библиотеки [OpenBackdoor](https://github.com/thunlp/OpenBackdoor).
+- Реализация [OrderBkd](https://arxiv.org/pdf/2402.07689) атаки. Модификация библиотеки [OpenBackdoor](https://github.com/thunlp/OpenBackdoor).
 - Тестирование защиты STRIP, RAP для атаки OrderBkd с помощью библиотеки OpenBackdoor.
 
 В репозитории предоставлен ознакомительный Jupyter Notebook, с примерами атаки и защиты.
