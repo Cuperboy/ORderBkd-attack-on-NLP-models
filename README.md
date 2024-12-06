@@ -33,7 +33,7 @@ python setup.py install
 - На ПК установлен [GNU WGET 1.21.4 for Windows](https://eternallybored.org/misc/wget/)  (Скопировать wget.exe в C:/Windows/)
 - На ПК установлен [Java](https://www.java.com/ru/download/)
 
-После клонирования репозитория:
+После, скачиваем датасет:
 ```
 cd datasets
 bash download_toxic.sh
