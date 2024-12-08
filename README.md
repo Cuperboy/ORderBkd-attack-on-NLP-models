@@ -82,11 +82,11 @@ self.path = # FullPATH до hsol датасета
 
 # Размер poisoned dataset
 
-N - это гиперпараметр, очень существенно влияющий на метрики.
+N - это параметр, очень существенно влияющий на метрики.
 
-Если N << dataset size, то CACC -> 1, ASR -> 0. 
+Если N << dataset size, то CACC -> 1, ASR убывает. 
 
-Если N = dataset size, то CACC -> 0.5 - 0.6, ASR -> 1. 
+Если N = dataset size, то CACC убывает, ASR -> 1. 
 
 Я во всех тестах беру N = примерно 1/2 train size (2500 - 2700)
 
